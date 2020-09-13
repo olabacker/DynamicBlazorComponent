@@ -1,0 +1,30 @@
+﻿@CreateDynamicComponent();
+
+@functions {
+    /// <summary>
+    /// Type of the blazor component to be rendered
+    /// </summary>
+    [Parameter]
+    public Type ComponentType { get; set; }
+
+    /// <summary>
+    /// Properties on the created component to be set
+    /// </summary>
+    [Parameter]
+    public List<DynamicComponentAttribute> ComponentAttributes { get; set; }
+
+    private RenderFragment CreateDynamicComponent() => builder =>
+    {
+        builder.OpenComponent(0, ComponentType);
+
+        if(ComponentAttributes != null)
+        {
+            ComponentAttributes.ForEach(attr =>
+            {
+                builder.AddAttribute(attr.Sequence, attr.Name, attr.Sequence);
+            });
+        }
+
+        builder.CloseComponent();
+    };
+}
