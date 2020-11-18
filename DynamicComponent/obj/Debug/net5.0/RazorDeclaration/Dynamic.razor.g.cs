@@ -13,7 +13,7 @@ namespace DynamicComponent
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\olaba\Projects\DynamicBlazorComponent\DynamicComponent\_Imports.razor"
+#line 1 "C:\Users\Ola\Projects\dynamicblazorcomponent\DynamicComponent\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
@@ -27,10 +27,10 @@ using Microsoft.AspNetCore.Components.Web;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 3 "C:\Users\olaba\Projects\DynamicBlazorComponent\DynamicComponent\Dynamic.razor"
+#line 3 "C:\Users\Ola\Projects\dynamicblazorcomponent\DynamicComponent\Dynamic.razor"
             
     /// <summary>
-    /// Type of the blazor component to be rendered
+    /// Type of blazor component to be rendered
     /// </summary>
     [Parameter]
     public Type ComponentType { get; set; }
@@ -43,13 +43,15 @@ using Microsoft.AspNetCore.Components.Web;
 
     private RenderFragment CreateDynamicComponent() => builder =>
     {
-        builder.OpenComponent(0, ComponentType);
+        var index = 0;
+
+        builder.OpenComponent(index++, ComponentType);
 
         if(ComponentAttributes != null)
         {
             ComponentAttributes.ForEach(attr =>
             {
-                builder.AddAttribute(attr.Sequence, attr.Name, attr.Sequence);
+                builder.AddAttribute(index++, attr.PropertyName, attr.PropertyValue);
             });
         }
 

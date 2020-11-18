@@ -401,23 +401,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\olaba\\.nuget\\packages\\": {},
+    "C:\\Users\\Ola\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\olaba\\Projects\\DynamicBlazorComponent\\DynamicComponent\\DynamicComponent.csproj",
+      "projectUniqueName": "C:\\Users\\Ola\\Projects\\dynamicblazorcomponent\\DynamicComponent\\DynamicComponent.csproj",
       "projectName": "DynamicComponent",
-      "projectPath": "C:\\Users\\olaba\\Projects\\DynamicBlazorComponent\\DynamicComponent\\DynamicComponent.csproj",
-      "packagesPath": "C:\\Users\\olaba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\olaba\\Projects\\DynamicBlazorComponent\\DynamicComponent\\obj\\",
+      "projectPath": "C:\\Users\\Ola\\Projects\\dynamicblazorcomponent\\DynamicComponent\\DynamicComponent.csproj",
+      "packagesPath": "C:\\Users\\Ola\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ola\\Projects\\dynamicblazorcomponent\\DynamicComponent\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\olaba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ola\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

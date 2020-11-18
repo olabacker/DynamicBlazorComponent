@@ -2,7 +2,7 @@
 
 @functions {
     /// <summary>
-    /// Type of the blazor component to be rendered
+    /// Type of blazor component to be rendered
     /// </summary>
     [Parameter]
     public Type ComponentType { get; set; }
@@ -15,13 +15,15 @@
 
     private RenderFragment CreateDynamicComponent() => builder =>
     {
-        builder.OpenComponent(0, ComponentType);
+        var index = 0;
+
+        builder.OpenComponent(index++, ComponentType);
 
         if(ComponentAttributes != null)
         {
             ComponentAttributes.ForEach(attr =>
             {
-                builder.AddAttribute(attr.Sequence, attr.Name, attr.Sequence);
+                builder.AddAttribute(index++, attr.PropertyName, attr.PropertyValue);
             });
         }
 

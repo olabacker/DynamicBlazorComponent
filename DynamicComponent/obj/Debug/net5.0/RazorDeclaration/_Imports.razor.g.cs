@@ -13,7 +13,7 @@ namespace DynamicComponent
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\olaba\Projects\DynamicBlazorComponent\DynamicComponent\_Imports.razor"
+#line 1 "C:\Users\Ola\Projects\dynamicblazorcomponent\DynamicComponent\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
