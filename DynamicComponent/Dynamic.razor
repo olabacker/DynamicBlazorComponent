@@ -17,6 +17,8 @@
     {
         var index = 0;
 
+        builder.OpenComponent(index++, typeof(CascadingValue<int>));
+
         builder.OpenComponent(index++, ComponentType);
 
         if(ComponentAttributes != null)
